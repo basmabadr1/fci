@@ -1,0 +1,97 @@
+.l{
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 75%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: #b8b8d1;
+    border-radius: 15px;
+    position: relative;
+    left: 12px;
+    cursor: pointer;
+}
+nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:  sans-serif;
+color: white;
+transition: 0.3s;
+}
+a::before{
+    position: absolute;
+    content: " ";
+    left: 0;
+    height: 3px;
+    background-color: black;
+    bottom: -5px;
+    width: 0%;
+    transition: 0.3s;
+}
+a:hover{
+color: black;
+font-weight: bold;
+}
+a:hover::before{
+    width: 100%;
+}
+
+body{
+    background: linear-gradient(to right ,#0f0c29 , #302b63 ,#24243e);
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+.hello{
+    font-family: sans-serif;
+    font-size: 85px;
+    padding: 90px;
+    margin: auto;
+}
+.who{
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-left: 50px;
+    margin: auto;
+
+}
+.o{
+border : 1px , solid , white ;
+border: 1px solid ;
+background: none;
+padding: 8px 15px;
+font-size: 20px;
+font-family: sans-serif;
+cursor: pointer;
+margin: 40px;
+color:white ;
+position: relative;
+top: 26px;
+left: 11px;
+
+}
+.o:hover{
+    color:black;
+   
+}
+.o::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color:#b8b8d1 ; 
+    transition: 0.3s;
+    z-index: -1;
+    top: 0;
+    border-radius: 0 0 50px 50px;
+}
+.o:hover::before{
+    height:100% ;
+    width: 100%;
+}
